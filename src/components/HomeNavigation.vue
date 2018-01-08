@@ -5,18 +5,20 @@
     <div class="slider-description-wrapper">
       <nav class="slider-menu">
         <ol>
-          <li class="firstmenu">PRE SALE</li>
-          <li class="secondmenu">WOMEN</li>
-          <li class="secondmenu">MEN</li>
-          <li class="secondmenu">WOMEN SPORT</li>
-          <li class="secondmenu">PRE SALE</li>
-          <li class="firstmenu">WOMEN</li>
-          <li class="secondmenu">MEN</li>
-          <li class="secondmenu">WOMEN SPORT</li>
-          <li class="secondmenu">PRE SALE</li>
-          <li class="secondmenu">WOMEN</li>
-          <li class="firstmenu">MEN</li>
-          <li class="secondmenu">WOMEN SPORT</li>
+          <li class="firstmenu"><a>SALE</a></li>
+          <li class="secondmenu"><a>WOMEN</a></li>
+          <li class="secondmenu"><a>MEN</a></li>
+          <li class="firstmenu"><a>WINTER COLLECTION</a></li>
+          <li class="secondmenu"><a>WOMEN</a></li>
+          <li class="secondmenu"><a>MEN</a></li>
+          <li class="secondmenu"><a>WOMEN SPORT</a></li>
+          <li class="secondmenu"><a>MEN SPORT</a></li>
+          <li class="firstmenu"><a>HANDBAG COLLECTION</a></li>
+          <li class="firstmenu"><a>MOONLIGHT CAPSULE COLLECTION</a></li>
+          <li class="firstmenu"><a>PRE-SPRING 18</a></li>
+          <li class="secondmenu"><a>WOMEN</a></li>
+          <li class="secondmenu"><a>MEN</a></li>
+          <li class="secondmenu"><a>STORES</a></li>
         </ol>
       </nav>
       <div class="description-inner">
@@ -99,3 +101,18 @@ a:hover{
     margin-top: 20px;
   }
 </style>
+
+
+{
+"role1": [
+{
+"per": "page11"
+},
+{
+"per": "page12"
+},
+{
+"per": "page13"
+}
+]
+}
