@@ -35,7 +35,13 @@
 </template>
 
 <script>
+  import Vue from 'vue'
+  import VueResource from 'vue-resource'
+  Vue.use(VueResource)
   export default{
+    getData: function () {
+      this.$http.get("https://api.douban.com/v2/book/3884108")
+    }
   }
 </script>
 
