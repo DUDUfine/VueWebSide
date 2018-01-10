@@ -1,7 +1,7 @@
 <template>
     <div class="gellery" id="gellery">
       <div class="col-left">
-        <div class="homepage-block" @mouseenter="visible()"  @mouseleave="dispaly()">
+        <div class="homepage-block" @mouseenter="visible()"  @mouseleave="display()">
           <img src="../../static/img/block-01.jpg">
           <div class="homepage-inner" v-show="isShow" >
             <p>sdsadsa</p>
@@ -38,13 +38,11 @@
 </template>
 
 <script>
-//  import api from '../api'
-//  import Vue from 'vue'
-//  import VueResource from 'vue-resource'
-//  Vue.use(VueResource)
   export default {
-    data: {
-      isShow: false
+    data () {
+      return {
+        isShow: false
+      }
     },
     created () {
       this.getData()
@@ -72,13 +70,6 @@
         console.log('结束')
       }
 
-//      getData: function () {
-//        this.$http.get('https://api.douban.com/v2/book/3884108').then(response => {
-//          console.log(response.data)
-//        }, response => {
-//          console.log('error')
-//        })
-//      }
     }
   }
 </script>
