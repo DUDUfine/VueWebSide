@@ -45,6 +45,11 @@
     /*background-color: #42b983;*/
     padding-top: 30px;
     height: 110px;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    background-color:#fffffff7;
+    position: fixed;
   }
   .searchTitle{
     font-size: 28px;
@@ -57,6 +62,10 @@
   .nav-menu{
     float: right;
     margin-right: 20px;
+    position: absolute;
+    right:2rem;
+    top:8rem;
+
   }
   .nav-menu ul{
     display: inline-block;

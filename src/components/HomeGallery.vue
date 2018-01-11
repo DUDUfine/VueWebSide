@@ -1,22 +1,30 @@
 <template>
     <div class="gellery" id="gellery">
       <div class="col-left">
-        <div class="homepage-block" @mouseenter="visible()"  @mouseleave="display()">
+        <div class="homepage-block" @mouseenter="visible(0)"  @mouseleave="display(0)">
           <img src="../../static/img/block-01.jpg">
-          <div class="homepage-inner" v-show="isShow" >
-            <p>sdsadsa</p>
+          <div class="homepage-inner" v-show="isShow[0]" id="pic-inner1">
+            <div class="seperateLine"></div>
           </div>
         </div>
-        <div class="homepage-block">
+        <div class="homepage-block" @mouseenter="visible(1)"  @mouseleave="display(1)">
           <img src="../../static/img/block-02.jpg">
+          <div class="homepage-inner" v-show="isShow[1]" id="pic-inner2">
+            <p>sdsadsa</p>
+          </div>
         </div>
         <div class="homepage-block">
           <img src="../../static/img/block-03.jpg">
         </div>
       </div>
+
+
       <div class="col-right">
-        <div class="homepage-block">
-            <img src="../../static/img/block-04.jpg">
+        <div class="homepage-block" @mouseenter="visible(3)"  @mouseleave="display(3)">
+          <img src="../../static/img/block-04.jpg">
+          <div class="homepage-inner" v-show="isShow[3]" id="pic-inner3">
+            <p>sdsadsa</p>
+          </div>
         </div>
         <div class="col-2">
           <div class="col-1">
@@ -25,13 +33,22 @@
             </div>
           </div>
           <div  class="col-1">
-            <div class="homepage-block">
+            <div class="homepage-block" @mouseenter="visible(5)"  @mouseleave="display(5)">
               <img src="../../static/img/block-06.gif">
+              <div class="homepage-inner" v-show="isShow[5]" id="pic-inner5">
+                <p>sdsadsa</p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="homepage-block">
+        <div class="homepage-block" @mouseenter="visible(6)"  @mouseleave="display(6)">
           <img src="../../static/img/block-07.jpg">
+          <div class="homepage-inner" v-show="isShow[6]" id="pic-inner6">
+            <p>sdsadsa</p>
+          </div>
+        </div>
+        <div id="der">
+
         </div>
       </div>
     </div>
@@ -41,7 +58,8 @@
   export default {
     data () {
       return {
-        isShow: false
+        isShow: [false, false, null, false, null, false, false],
+        imgInfo: {}
       }
     },
     created () {
@@ -53,21 +71,22 @@
           methods: 'get',
           url: '/api/book/3884108'
         }).then(function (response) {
-//          console.log('请求成功' + JSON.stringify(response.data.tags))
+          console.log('请求成功' + JSON.stringify(response.data.tags))
+
+          this.imgInfo = response.data.tags
         }, function () {
           console.log('error')
         })
-//        this.$http.get(api.getData()).then((response) => {
-//          console.log(this.tags)
-//        })
       },
-      visible: function () {
-        this.isShow = true
-        console.log('开始')
+      visible: function (i) {
+        this.$set(this.isShow, i, true)
+//        var con = document.getElementById('pic-inner' + i)
+//        con.innerHTML = '<p>' + this.imgInfo[0].name + '</p>'
+        console.log('开始' + i)
       },
-      display: function () {
-        this.isShow = false
-        console.log('结束')
+      display: function (i) {
+        this.$set(this.isShow, i, false)
+        console.log('结束' + i)
       }
 
     }
@@ -79,6 +98,8 @@
     margin: 20px ;
     white-space: nowrap;
     /*vertical-align: top;*/
+    position: absolute;
+    top: 72rem;
   }
 .col-left{
   width: 32%;
@@ -122,4 +143,11 @@
     /*background-color: orange;*/
    /*visibility: visible;*/
   /*}*/
+
+  .seperateLine{
+    display: inline-block;
+    color: #2c3e50;
+    height: 3px;
+    width: 90%;
+  }
 </style>

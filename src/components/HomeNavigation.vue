@@ -5,16 +5,16 @@
     <div class="slider-description-wrapper">
       <nav class="slider-menu">
         <ol>
-          <li class="firstmenu"><a>SALE</a></li>
-          <li class="secondmenu"><a>WOMEN</a></li>
-          <li class="secondmenu"><a>MEN</a></li>
-          <li class="firstmenu"><a>WINTER COLLECTION</a></li>
-          <li class="secondmenu"><a>WOMEN</a></li>
+          <li class="firstmenu"><a href="https://www.thekooples.com/en/women/best-sellers.html">SALE</a></li>
+          <li class="secondmenu"><a href="https://www.thekooples.com/en/women/best-sellers.html">WOMEN</a></li>
+          <li class="secondmenu"><a href="https://www.thekooples.com/en/men/best-sellers.html">MEN</a></li>
+          <li class="firstmenu"><a href="">WINTER COLLECTION</a></li>
+          <li class="secondmenu"><a href="https://www.thekooples.com/en/women-sport/best-sellers.html">WOMEN</a></li>
           <li class="secondmenu"><a>MEN</a></li>
           <li class="secondmenu"><a>WOMEN SPORT</a></li>
-          <li class="secondmenu"><a>MEN SPORT</a></li>
+          <li class="secondmenu"><a href="https://www.thekooples.com/en/men-sport/best-sellers.html">MEN SPORT</a></li>
           <li class="firstmenu"><a>HANDBAG COLLECTION</a></li>
-          <li class="firstmenu"><a>MOONLIGHT CAPSULE COLLECTION</a></li>
+          <li class="firstmenu"><a href="https://www.thekooples.com/en/women-pre-collection.html">MOONLIGHT CAPSULE COLLECTION</a></li>
           <li class="firstmenu"><a>PRE-SPRING 18</a></li>
           <li class="secondmenu"><a>WOMEN</a></li>
           <li class="secondmenu"><a>MEN</a></li>
@@ -44,6 +44,7 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .main-contain{
+  top:12rem;
   position: relative;
 }
 ul {
