@@ -58,8 +58,7 @@
   export default {
     data () {
       return {
-        isShow: [false, false, null, false, null, false, false],
-        imgInfo: {}
+        isShow: [false, false, null, false, null, false, false]
       }
     },
     created () {
@@ -80,8 +79,7 @@
       },
       visible: function (i) {
         this.$set(this.isShow, i, true)
-//        var con = document.getElementById('pic-inner' + i)
-//        con.innerHTML = '<p>' + this.imgInfo[0].name + '</p>'
+
         console.log('开始' + i)
       },
       display: function (i) {

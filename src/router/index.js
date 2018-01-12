@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HomeNavigation from '@/components/HomeNavigation'
-import WebWrapper from '@/components/WebWrapper'
+import StoreWrapper from '@/view/StoreWrapper'
+import WebWrapper from '@/view/WebWrapper'
 
 Vue.use(Router)
 
@@ -13,9 +13,9 @@ export default new Router({
       component: WebWrapper
     },
     {
-      path: '/',
-      name: 'HomeNavigation',
-      component: HomeNavigation
+      path: '/StoreWrapper',
+      name: 'StoreWrapper',
+      component: StoreWrapper
     }
 
   ]

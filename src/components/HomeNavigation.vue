@@ -1,11 +1,9 @@
 <template>
-  <div class="main-contain">
-    <!--<p>sdasd</p>-->
-     <img src="../../static/img/slider-01de.jpg" class="img-contain">
+
     <div class="slider-description-wrapper">
       <nav class="slider-menu">
         <ol>
-          <li class="firstmenu"><a href="https://www.thekooples.com/en/women/best-sellers.html">SALE</a></li>
+          <li class="firstmenu"><router-link :to="{name: 'StoreWrapper'}">SALE</router-link></li>
           <li class="secondmenu"><a href="https://www.thekooples.com/en/women/best-sellers.html">WOMEN</a></li>
           <li class="secondmenu"><a href="https://www.thekooples.com/en/men/best-sellers.html">MEN</a></li>
           <li class="firstmenu"><a href="">WINTER COLLECTION</a></li>
@@ -21,16 +19,7 @@
           <li class="secondmenu"><a>STORES</a></li>
         </ol>
       </nav>
-      <div class="description-inner">
-        <ul class="ul-slider">
-          <li><a href="https://www.thekooples.com/en/men/best-sellers.html">SHOP WOMEN</a></li>
-          <li>|</li>
-          <li><a href="https://www.thekooples.com/en/men/best-sellers.html">SHOP MEN</a></li>
-        </ul>
-      </div>
-
     </div>
-  </div>
 </template>
 
 <script>
@@ -43,10 +32,7 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.main-contain{
-  top:12rem;
-  position: relative;
-}
+@import "../assets/defaul.less";
 ul {
   list-style-type: none;
   padding: 0;
@@ -55,22 +41,15 @@ li {
   display: inline-block;
   margin: 0 10px;
 }
-.img-contain{
-  width: 100%;
-}
+
 .slider-description-wrapper{
   position: absolute;
   width: 100%;
-  top: 0;
+  top: 11rem;
   left:0;
   text-align: center;
 }
-.description-inner{
 
-  align-items: center;
-  margin-top: 27%;
-
-}
   li{
     font-size: 1.6rem;
     color: white;
@@ -78,14 +57,12 @@ li {
     letter-spacing: 1px;
   }
 a{
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   color: white;
   letter-spacing: 1px;
   text-decoration: none;
 }
-a:hover{
-  text-decoration: underline;
-}
+
 .slider-menu li{
   display: block;
   font-size: 1.3rem;
@@ -94,26 +71,29 @@ a:hover{
   .slider-menu{
     position: absolute;
     width: 200px;
+    /*height: 100px;*/
+    /*overflow-y: scroll;*/
     text-align: left;
     margin-top: 30px;
+    padding-right: 3rem;
   }
   .firstmenu{
     font-weight: bold;
     margin-top: 20px;
   }
+/*被引入StoreWrapper组件的样式*/
+/*-----------start---------------*/
+.store-nav .slider-menu{
+  overflow-y: scroll;
+  height: 600px;
+}
+
+.store-nav .slider-description-wrapper{
+  position: fixed;
+  top: 12rem;
+
+}
+/*-----------End---------------*/
 </style>
 
 
-{
-"role1": [
-{
-"per": "page11"
-},
-{
-"per": "page12"
-},
-{
-"per": "page13"
-}
-]
-}
