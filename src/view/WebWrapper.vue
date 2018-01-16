@@ -19,9 +19,6 @@
   import Header from '../components/Header'
   import HomeNavigation from '../components/HomeNavigation'
   import HomeGallery from '../components/HomeGallery'
-//  import VueResource from 'vue-resource'
-//  import Vue from 'vue'
-//  Vue.use(VueResource)
   export default {
     name: 'WebWrapper',
     components: {

@@ -42,7 +42,6 @@
     height: 50px;
   }
   #header{
-    /*background-color: #42b983;*/
     padding-top: 30px;
     height: 110px;
     position: fixed;
@@ -71,6 +70,9 @@
     display: inline-block;
   }
 
-
+  .store-nav #header{
+    overflow-y: scroll;
+    height:100px;
+  }
 
 </style>
