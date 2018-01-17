@@ -3,7 +3,7 @@
 	<div >
     <header id="header">
       <div class="alginCenter">
-        <a class="logo-header"></a>
+        <router-link :to="{name: 'WebWrapper'}" class="logo-header" ></router-link>
       </div>
       <div id="search">
         <label for="searchText" class="searchTitle">SEARCH</label>

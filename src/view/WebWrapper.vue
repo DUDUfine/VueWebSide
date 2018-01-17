@@ -11,8 +11,8 @@
         </ul>
       </div>
     </div>
-    <HomeNavigation></HomeNavigation>
-    <HomeGallery></HomeGallery>
+    <home-navigation></home-navigation>
+    <home-gallery></home-gallery>
   </div>
 </template>
 <script>
@@ -41,8 +41,8 @@
 <style>
   /*@import "../assets/defaul.less";*/
   .main-contain{
-    top:12rem;
-    position: relative;
+    padding-top:12rem;
+    /*position: relative;*/
   }
   .description-inner{
     width: 100%;

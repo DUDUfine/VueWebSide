@@ -85,7 +85,7 @@ a{
 /*-----------start---------------*/
 .store-nav .slider-menu{
   overflow-y: scroll;
-  height: 600px;
+  height: 450px;
 }
 
 .store-nav .slider-description-wrapper{

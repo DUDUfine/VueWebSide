@@ -4,13 +4,19 @@
         <div class="homepage-block" @mouseenter="visible(0)"  @mouseleave="display(0)">
           <img src="../../static/img/block-01.jpg">
           <div class="homepage-inner" v-show="isShow[0]" id="pic-inner1">
-            <div class="seperateLine"></div>
+            <div class="inner-content">
+              <h2 class="innerfont"><a>PRE COLLECTION SUMMER 2018</a></h2>
+              <h2 class="innerfont"><a>SHOP CHERRY LOVE BLACK SILK TOP WITH RUFFLES</a></h2>
+            </div>
           </div>
         </div>
         <div class="homepage-block" @mouseenter="visible(1)"  @mouseleave="display(1)">
           <img src="../../static/img/block-02.jpg">
           <div class="homepage-inner" v-show="isShow[1]" id="pic-inner2">
-            <p>sdsadsa</p>
+           <div>
+             <h2>PRE COLLECTION SUMMER 2018</h2>
+             <a>SHOP CHERRY LOVE BLACK SILK TOP WITH RUFFLES</a>
+           </div>
           </div>
         </div>
         <div class="homepage-block">
@@ -96,8 +102,8 @@
     margin: 20px ;
     white-space: nowrap;
     /*vertical-align: top;*/
-    position: absolute;
-    top: 72rem;
+    /*position: absolute;*/
+    /*top: 72rem;*/
   }
 .col-left{
   width: 32%;
@@ -142,10 +148,24 @@
    /*visibility: visible;*/
   /*}*/
 
-  .seperateLine{
-    display: inline-block;
-    color: #2c3e50;
-    height: 3px;
-    width: 90%;
+  /*.seperateLine{*/
+    /*display: inline-block;*/
+    /*color: #2c3e50;*/
+    /*height: 3px;*/
+    /*width: 90%;*/
+  /*}*/
+
+  .innerfont{
+    display: block;
+    font-family: "Conv_Montserrat-Bold";
+    font-size: 25px;
+    font-weight:bold;
+    text-transform: uppercase;
   }
+.inner-content{
+  display: -webkit-flex; /* Safari */
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
 </style>
